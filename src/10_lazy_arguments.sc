@@ -1,5 +1,15 @@
+val a = {println("getA"); 1}
+
+lazy val b = {println("getB"); 1}
+
+a
+b
+
+
+
+
 def defaultForTrue= "works"
-def defaultForFalse = throw new Exception
+def defaultForFalse = {println("calculate"); "worksAsWell"}
 
 
 
@@ -15,3 +25,5 @@ def getSimple(really:Boolean,ifTrue:AnyRef = defaultForTrue,ifFalse:AnyRef = def
 
 getLazy(true)
 getSimple(true)
+
+
