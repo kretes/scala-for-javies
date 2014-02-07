@@ -5,3 +5,8 @@ site 'http://community.opscode.com/api/v1'
 cookbook "apt"
 cookbook "vim", {}
 cookbook "git", {}
+cookbook "tar", {}
+cookbook "scala-ide",
+  :path => "customCookbooks/scala-ide"
+cookbook "intellij-idea",
+    :path => "customCookbooks/intellij-idea"

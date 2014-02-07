@@ -1,5 +1,3 @@
-#include_recipe tar
-
 intellij_version = "13.0.2"
 
 intellij_mirror_site = "http://download.jetbrains.com/idea/ideaIU-#{intellij_version}.tar.gz"
