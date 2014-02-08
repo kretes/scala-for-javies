@@ -6,6 +6,7 @@ cookbook "apt"
 cookbook "vim", {}
 cookbook "git", {}
 cookbook "tar", {}
+cookbook "java", {}
 cookbook "scala-ide",
   :path => "customCookbooks/scala-ide"
 cookbook "intellij-idea",
