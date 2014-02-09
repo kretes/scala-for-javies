@@ -12,3 +12,4 @@ def full(name:String = "Jan",surname:String = "Kowalski") = name + " " + surname
 full("John","Doe")
 full("John")
 full(surname = "Doe")
+full("Jan",surname = "Doe")
