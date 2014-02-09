@@ -4,6 +4,10 @@
 
 // companion
 
+//typ Singleton?
+
+//case class?
+
 //metody eq equals and === ?
 
 //symbole
