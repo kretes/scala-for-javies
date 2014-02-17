@@ -2,16 +2,16 @@ trait A {
   def method:String
 }
 
-trait B extends A {
+trait B extends Shape {
   override def method = "B"
 }
 
-trait C extends A {
+trait C extends Shape {
   def method = "C"
 }
-class E extends A with C
-class F extends A with B
-class G extends Object with B
+class E extends Shape with C
+class F extends Shape with Rectangle
+class G extends Object with Rectangle
 (new E).method
 (new F).method
 (new G).method
