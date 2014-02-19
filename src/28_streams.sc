@@ -7,6 +7,42 @@ oddStream.take(5).force
 oddStream.take(10).force.toList
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //so fibonacci looks like this
 
 
