@@ -13,11 +13,8 @@ Vagrant.configure("2") do |config|
     v.gui = true
   end
 
-  #config.omnibus.chef_version = :latest
+  config.omnibus.chef_version = "11.10.4"
   # install by `vagrant plugin install vagrant-omnibus`
-
-  #config.vm.provision :shell, :inline => 'apt-get install build-essential ruby1.9.1-dev --no-upgrade --yes'
-  #config.vm.provision :shell, :inline => "gem install chef --version 11.10.0 --no-rdoc --no-ri --conservative"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]

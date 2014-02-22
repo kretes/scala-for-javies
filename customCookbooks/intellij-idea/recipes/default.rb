@@ -18,4 +18,5 @@ end
 
 execute "createsymlink" do
    command "ln -s /opt/idea-IU-#{intellij_build} /opt/idea"
+   not_if { ::File.exists?("/opt/idea")}
 end
