@@ -11,9 +11,13 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v|
     v.gui = true
+    v.customize ["modifyvm", :id, "--memory", "4000"]
+    v.customize ["modifyvm", :id, "--cpus", "4"]
+    v.customize ["modifyvm", :id, "--accelerate3d", "on"]
   end
 
-  config.omnibus.chef_version = "11.10.4"
+  #config.omnibus.chef_version = "11.10.4"
+  config.vbguest.auto_update = true
   # install by `vagrant plugin install vagrant-omnibus`
 
   config.vm.provision :chef_solo do |chef|
@@ -28,5 +32,6 @@ Vagrant.configure("2") do |config|
         :prefix => "/usr/local"
       }
     }
+    chef.log_level = :debug
   end
 end

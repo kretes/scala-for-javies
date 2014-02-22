@@ -1,7 +1,7 @@
 intellij_version = "13.0.2"
-intellij_build = "133.696"
+intellij_build = "134.1160"
 
-intellij_file = "ideaIU-#{intellij_version}.tar.gz"
+intellij_file = "ideaIC-#{intellij_build}.tar.gz"
 intellij_mirror_site = "http://download.jetbrains.com/idea/#{intellij_file}"
 
 directory "/opt" do
@@ -14,6 +14,7 @@ tar_extract intellij_mirror_site do
   target_dir "/opt/"
   creates "/opt/idea-IU-#{intellij_build}"
   user "vagrant"
+  not_if { ::File.exists?("/opt/idea")}
 end
 
 execute "createsymlink" do
