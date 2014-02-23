@@ -1,3 +1,6 @@
+
+//this is a singleton
+//there are no 'static' in Scala
 object anObject {
 
   def doA = false
