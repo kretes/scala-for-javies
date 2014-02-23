@@ -17,6 +17,8 @@ def benchmark(sequence:GenSeq[Int]) = {
 
 benchmark(seq)
 
+
 benchmark(par)
+
 
 

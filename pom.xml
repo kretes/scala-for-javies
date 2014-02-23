@@ -8,6 +8,8 @@
     <artifactId>scala-for-javies</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
+        <sourceDirectory>src/main/scala</sourceDirectory>
+        <testSourceDirectory>src/test/scala</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
