@@ -1,3 +1,4 @@
+//scala has tuples
 val longTuple = (1,2L,5.0,"string")
 longTuple._1
 longTuple._2

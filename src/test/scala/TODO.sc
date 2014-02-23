@@ -1,30 +1,17 @@
-// czy jest big decimal?
+//add to course:
 
-//klasy wartości
-
-// companion
-
-//typ Singleton?
-
-//case class?
-
-//metody eq equals and === ?
-
-//symbole
-
-// how to do this in scala:
-        if(skills == null) {
-            skills = skillService.fetchSkillsFor(phoneExtension); 
-        }
-        return skills;
-
-
-//advanced:
 
 //tail recursion
 
-//Dynamics ???
+//Dynamics ??? - something like missing method
 
 //implicit conversions
 
 //macros ?!
+
+
+//understand
+
+//typ Singleton?
+
+//metody eq equals and === ?

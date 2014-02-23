@@ -39,4 +39,15 @@ getSimple(true)
 
 
 
+//taken from some project
+//JAVA:
+//if(skills == null) {
+//  skills = skillService.fetchSkillsFor(phoneExtension);
+//}
+//return skills;
+
+//will be in Scala:
+//lazy val skills = skillService.fetchSkillsFor(phoneExtension)
+
+
 

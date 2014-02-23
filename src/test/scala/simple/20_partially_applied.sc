@@ -14,5 +14,14 @@ callMeBond(4)
 callMeJames(5)
 
 
+//function with multiple parameters
+val helloSomeone = (hello:String,toWhom:String) => s"$hello $toWhom"
+helloSomeone("hi","world")
 
+val helloTomek = helloSomeone(_:String,"Tomek")
+helloTomek("Witaj")
+
+//now you can inline a partially applied function and pass them around
+Seq("Hello").map(helloSomeone(_,"Tomek"))
+Seq("Tomek").map(helloSomeone("Hello",_))
 

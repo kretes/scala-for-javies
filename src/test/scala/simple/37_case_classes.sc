@@ -1,4 +1,4 @@
-//now thats' an easy way to create a value object class
+//now that's an easy way to create a value object class
 case class Customer(name:String, isAdmin:Boolean)
 val nfon1: Customer = new Customer("NFON",true)
 val nfon2: Customer = new Customer("NFON",true)

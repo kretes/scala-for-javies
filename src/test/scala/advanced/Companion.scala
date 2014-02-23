@@ -1,3 +1,5 @@
+package advanced
+
 object Companion {
   def apply(value:String) = new Companion(value)
 }

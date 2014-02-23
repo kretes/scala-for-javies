@@ -1,3 +1,4 @@
+//TODO explanation
 def generateStream(start:Int,step:Int):Stream[Int] = start #:: generateStream(start+step,step);
 
 val oddStream = generateStream(0,2)
@@ -51,6 +52,7 @@ def fibonacciStream(current:Int, next:Int):Stream[Int] = current #:: fibonacciSt
 val fibonacci = fibonacciStream(1,1)
 
 fibonacci.take(20).force
+
 
 fibonacci(1000) //this is as well possible
 
