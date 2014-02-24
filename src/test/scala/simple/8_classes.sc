@@ -8,14 +8,16 @@ bean.alive
 //this is a scala-bean generated setter for Variable
 bean.alive_=(false)
 bean.alive
-bean.name_=("Hubert") //will not compile as name is an immutable value and therefore does not have a setter
+//will not compile as name is an immutable value and therefore does not have a setter
+//bean.name_=("Hubert")
 
 
+// will not compile, as this is a private member
+//bean.age
 
-bean.age // will not compile, as this is a private member
 
-
-bean.string // will not compile, as this is a private member
+// will not compile, as this is a private member
+//bean.string
 
 
 

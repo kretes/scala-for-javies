@@ -9,12 +9,16 @@ class Greeting[T <: Person](greeting: String) {
 val greetAny = new Greeting[Person]("any")
 
 greetAny.greet(new Man("man"))
+
 greetAny.greet(new Woman("woman"))
+
 
 val greetMan = new Greeting[Man]("hello man ")
 
 greetMan.greet(new Man("man"))
-greetMan.greet(new Woman("woman"))
+
+//bad type
+//greetMan.greet(new Woman("woman"))
 
 
 

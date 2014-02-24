@@ -4,8 +4,13 @@ val immutable:Int = 1
 //type can be infered
 val implicitlyTyped = 1
 //variables are mutable
-var variable=1
-variable = 2
 
-//everything is an expression
-val result = if (variable == 2) 3 else 4
+object WrappedInObjectDueToIdeaWorksheetLimitations {
+  var variable=1
+  println(variable)
+  variable=2
+  println(variable)
+}
+
+WrappedInObjectDueToIdeaWorksheetLimitations
+
