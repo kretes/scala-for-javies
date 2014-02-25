@@ -4,7 +4,7 @@ def sum(x:Int, y:Int) = x + y
 sum(1,2)
 
 def isNegative(x:Int) = if (x<0) true else false
-isNegative(-1)
+isNegative(2)
 
 
 def loopForever1:Unit = while(true){}
@@ -15,5 +15,8 @@ def hello3(name: String) = {
   hello_!
 }
 hello3("All")
+
+
+
 
 
